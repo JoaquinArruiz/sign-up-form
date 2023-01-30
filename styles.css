@@ -57,9 +57,11 @@ body {
     width: 70%;
     margin: auto;
     align-content: center;
+    transition: step-end, 1s;
 }
 
 .header{
+    z-index: 1;
     background-image: url('./background1.jpeg');
     background-size:cover;
     position: relative;
@@ -89,7 +91,7 @@ body {
 
 .header .sidebar > a{
     color: white;
-    font-size: 2em;
+    font-size: 5vh;
     text-decoration: none;
 }
 
@@ -106,12 +108,11 @@ body {
     bottom: 1em;
     left: 1em;
     text-shadow:2px 2px 1px rgb(0,0,0);
+    transition: step-end, 1s;
 }
 
 .header span a {
     text-decoration: none;
-    transform: scale(0.4);
-    transition: step-end, 1s;
     color: rgb(255,255,255);
     text-decoration: underline;
     text-underline-offset: 0.1em;
@@ -120,7 +121,7 @@ body {
 .header span a:hover {
     transform: scale(0.4);
     transition: step-end, 1s;
-    color: black;
+    color: rgb(204, 39, 39);0
     text-shadow: 2px 2px 1px rgb(255, 255, 255);
 }
 
@@ -134,6 +135,7 @@ body {
 }
 
 .form {
+    z-index: 5;
     height: 100vh;
     width: calc((100%/3)*2);
     margin: auto;
@@ -174,6 +176,12 @@ body {
         height: 100%;
         size: 100%;
         top: 0;
+        font-size: 2em;
+    }
+
+    .header span {
+        transition: step-end, 1s;
+        font-size: 0.5em;
     }
 
     .form {
