@@ -10,6 +10,7 @@ Started with the box model and the css, added my own logo + hyperlinks, asked fo
 As always you can check the project at the footer (or clicking the page title!)
 
 Really cool project, love the design part.
+
 -----
 
 #### Known Issues:   
