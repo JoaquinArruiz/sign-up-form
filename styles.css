@@ -50,7 +50,8 @@ table {
 }
 
 body{
-    background-color: rgb(100, 100, 200);
+    z-index: 0;
+    background-color: rgb(45, 94, 41);
     display: flex;
     flex-direction: column;
 }
@@ -145,7 +146,7 @@ body{
     margin-left: 0.5em;
     padding-bottom: 0.5em;
     color: white;
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 
 .form {
@@ -179,6 +180,14 @@ label, input {
     font-family: 'Righteous', cursive;
 }
 
+input:valid{
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
 
 ::placeholder {
 
@@ -203,11 +212,45 @@ label, input {
     width: 50%;
 }
 
+.botform button {
+    background-color: purple;
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous', cursive;
+    height: 3em;
+    width: 10em;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 2em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    text-shadow: 2px 2px 1px black;
+    transition: ease-in-out, 0.5s;
+}
+
+
+button:hover{
+    transform: scale(0.9);
+}
+
+button:active {
+    color: green;
+    transform: scale(0.7);
+}
+
 .form .topform {
+    box-sizing: border-box;
     position: relative;
+    z-index: -1;
     background-color: rgba(165, 165, 165, 0.3);
     height: 35%;
     width: 100%;
+    font-family: 'Righteous', cursive;
+    font-size: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 1em;
+    padding-right: 2em;
+    padding-left: 1em;
+    text-shadow: 2px 2px 1px black;
 }
 .form .midform {
     padding-top: 1em;
@@ -215,11 +258,24 @@ label, input {
     background-color: rgba(255, 255, 255, 0.3);
     height: 35%;
     width: 100%;
+    
 }
+
 .form .botform {
-    background-color: rgba(161, 161, 161, 0.3);
-    height: 30%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: -1;
+    background-color: rgba(165, 165, 165, 0.3);
+    height: 25%;
     width: 100%;
+    font-family: 'Righteous', cursive;
+    font-size: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 1em;
+    padding-right: 2em;
+    padding-left: 1em;
+
 }
 
 footer {   
@@ -228,7 +284,7 @@ footer {
     margin: auto;
     font-family: 'Righteous', cursive;
     background-color: rgb(255,255,255, 0.5);
-    height: 2em;
+    height: 10%;
     font-size: 1em;
     text-align: center;
     font-family: 'VT323', sans-serif;
@@ -263,6 +319,8 @@ footer a:hover {
 
 @media (max-aspect-ratio: 16/11) {
 
+    
+
     .mainBody {
         display: flex;
         flex-direction: column;
@@ -290,9 +348,24 @@ footer a:hover {
 
     .form {
         width: 100%;
+        height: 100%;
     }
 
     footer {
         width: 100%;
+    }
+
+    .botform {
+        text-align: center;
+        height: 30%;
+        align-content: center;
+    }
+
+    .topform{
+        height: 10%;
+    }
+    
+    .midform{
+        height: 100vh;
     }
 }

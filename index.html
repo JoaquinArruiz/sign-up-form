@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="Logo Color.svg"/>
 </head>
 <body>
     
@@ -19,24 +20,24 @@
         </section>
         <section class = "form">
             <section class = "topform">
-                <p>top</p>
+                <p>This is not a real online service! You know you neeed something like this in your life to help you realize your deepest dreams.</p>
             </section>
             <section class = "midform">
                 <div class = "title">Let's do this!</div>
                 <div class = "formData">
-                    <form action = "#" method ="post"></form>
+                    <form action = "#" method ="get"></form>
 
 
                     <div class = "form1">
 
                         <label for = "first_name">First Name</label>
-                        <input type="text" id="first_name" placeholder="Joaquin" name="first_name">
+                        <input type="text" id="first_name" placeholder="Joaquin" name="first_name" required>
                         
                         <label for = "email"> Email</label>
-                        <input type= "text" id="email" placeholder="your@email.com"  name="email" minlength="2">
+                        <input type= "text" id="email" placeholder="your@email.com"  name="email" minlength="2" required>
                     
                         <label for = "password">Password</label>
-                        <input type="password" id="password" placeholder="Your Password" name="password">
+                        <input type="password" id="password" placeholder="Your Password" name="password" minlength='6' required title="Please enter a valid password (6char)">
 
                     </div>                    
                     
@@ -44,30 +45,34 @@
                     <div class = "form2">
 
                         <label for = "last_name">Last Name</label>
-                        <input type="text" id="last_name" placeholder="Arruiz"  name="last_name">
+                        <input type="text" id="last_name" placeholder="Arruiz"  name="last_name" required>
                         
                         <label for = "phone_number">Phone</label>
-                        <input type="text" id="phone_number" placeholder="341-1234567">
+                        <input type="number" id="phone_number" placeholder="341-1234567 (Optional)">
 
-                        <label for = "password">Repeat Password</label>
-                        <input type="password" id="password" placeholder="Your Password again" name="password">  
+                        <label for ="confirmpassword">Confirm Password</label>
+                        <input type="password" id="passwordConfirm" placeholder="Repeat your password" name="password" minlength='6' required>
 
                     </div>
 
+                    
 
-                    </form>
+                    
                 </div>
                 
             </section>
             <section class = "botform">
-                <p>bottom</p>
+                
+                <button type ="submit">Register NOW!</button>
+                <p>Already a member? <a href="#">Log in</a></p>
             </section>
+        </form>
         </section>
 
     </section>
 
         <footer><a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form">'Project: Sign-up Form'</a><span> - </span><a href="https://github.com/JoaquinArruiz/rock-paper-scissors">Joaquin Arruiz's github</a></footer>
     
-    
+    <script src="script.js" defer></script>
 </body>
 </html>
