@@ -50,14 +50,13 @@ table {
 }
 
 body{
-    background-color: rgb(100, 100, 201);
+    background-color: rgb(100, 100, 200);
     display: flex;
     flex-direction: column;
 }
 
 
 .mainBody {
-    background-color: rgb(27, 24, 34);
     display: flex;
     flex-direction:row;
     width: 70%;
@@ -127,8 +126,8 @@ body{
 .header span a:hover {
     transform: scale(0.4);
     transition: step-end, 1s;
-    color: rgb(204, 39, 39);0
-    text-shadow: 2px 2px 1px rgb(255, 255, 255);
+    color: rgb(116, 0, 0);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
 }
 
 
@@ -140,27 +139,86 @@ body{
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(190deg) brightness(101%) contrast(103%);
 }
 
+.title {
+    font-family: 'Righteous', cursive;
+    font-size: 2em;
+    margin-left: 0.5em;
+    padding-bottom: 0.5em;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
 .form {
+    color: white;
     z-index: 5;
     height: 100vh;
     width: calc((100%/3)*2);
     margin: auto;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+label{
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+    font-family: 'Righteous', cursive;
+    font-weight: b;
+}
+
+
+input[type='text'], input[type='password'] {
+    border: 2px solid black;
+    box-shadow: 2px 2px 1px rgb(40, 40, 82);
+    border-radius: 0.4em;
+}
+
+label, input {
+    margin-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    font-family: 'Righteous', cursive;
+}
+
+
+::placeholder {
+
+    padding: 0.3em;
+
+}
+
+.formData {
+    display: flex;
+    flex-direction:row;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .form .topform {
     position: relative;
-    background-color: rgba(165, 165, 165, 0.5);
+    background-color: rgba(165, 165, 165, 0.3);
     height: 35%;
     width: 100%;
 }
 .form .midform {
-    background-color: rgba(255, 255, 255, 0.7);
-    height: 30%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 35%;
     width: 100%;
 }
 .form .botform {
-    background-color: rgba(161, 161, 161, 0.5);
-    height: 35%;
+    background-color: rgba(161, 161, 161, 0.3);
+    height: 30%;
     width: 100%;
 }
 
