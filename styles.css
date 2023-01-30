@@ -49,9 +49,15 @@ table {
 	border-spacing: 0;
 }
 
+body{
+    background-color: rgb(100, 100, 201);
+    display: flex;
+    flex-direction: column;
+}
 
 
-body {
+.mainBody {
+    background-color: rgb(27, 24, 34);
     display: flex;
     flex-direction:row;
     width: 70%;
@@ -143,24 +149,63 @@ body {
 
 .form .topform {
     position: relative;
-    background-color: rgb(0,100,0,0.5);
-    height: 30%;
+    background-color: rgba(165, 165, 165, 0.5);
+    height: 35%;
     width: 100%;
 }
 .form .midform {
-    background-color: rgb(100,0,0,0.5);
-    height: 35%;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 30%;
     width: 100%;
 }
 .form .botform {
-    background-color: rgb(0,0,100,0.5);
+    background-color: rgba(161, 161, 161, 0.5);
     height: 35%;
     width: 100%;
 }
 
-@media (max-width: 720px) {
+footer {   
+    width: 70%;
+    transition: step-end, 1s;
+    margin: auto;
+    font-family: 'Righteous', cursive;
+    background-color: rgb(255,255,255, 0.5);
+    height: 2em;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'VT323', sans-serif;
+    color: rgb(255, 255, 255);
+    }
 
-    body {
+footer a{
+    color: rgb(255,255,255);
+    position: relative;
+    margin: auto;
+    top: 20%;
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+
+footer span{
+    position: relative;
+    margin: auto;
+    top: 20%;
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+
+footer a:hover {
+    transition: ease-in-out, 0.3s;
+    text-shadow: 2px 2px 1px rgb(255,255,255);
+    color: rgb(204, 39, 39);
+    
+}
+
+@media (max-aspect-ratio: 16/11) {
+
+    .mainBody {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -176,16 +221,20 @@ body {
         height: 100%;
         size: 100%;
         top: 0;
-        font-size: 2em;
+    }
+    .header > .sidebar a {
+        font-size: 3em;
     }
 
     .header span {
-        transition: step-end, 1s;
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
 
     .form {
         width: 100%;
     }
 
+    footer {
+        width: 100%;
+    }
 }
