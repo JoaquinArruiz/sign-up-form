@@ -51,7 +51,7 @@ table {
 
 body{
     z-index: 0;
-    background-color: rgb(45, 94, 41);
+    background-color: #3b82f6;
     display: flex;
     flex-direction: column;
 }
@@ -64,7 +64,6 @@ body{
     margin: auto;
     align-content: center;
     transition: step-end, 1s;
-    background-color: rgb(255, 131, 48);
 }
 
 .header{
