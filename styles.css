@@ -64,6 +64,7 @@ body{
     margin: auto;
     align-content: center;
     transition: step-end, 1s;
+    background-color: rgb(255, 131, 48);
 }
 
 .header{
